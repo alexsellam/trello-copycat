@@ -5,8 +5,8 @@ import CardContent from '@material-ui/core/CardContent';
 
 const TrelloCard = ({text}) => {
     return (
-        <Card >
-        <CardContent style={styles.cardContainer}>
+        <Card style={styles.cardContainer}>
+        <CardContent>
             <Typography gutterBottom>
             {text}          
             </Typography>
@@ -17,7 +17,7 @@ const TrelloCard = ({text}) => {
 
 const styles = {
     cardContainer: {
-        marginBottom: 5
+       marginBottom: 8, 
     } 
 };
 export default TrelloCard; 

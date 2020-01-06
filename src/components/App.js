@@ -1,7 +1,7 @@
 import React from 'react';
 import TrelloList from './TrelloList'
 import { connect } from 'react-redux';
-
+import TrelloActionButton from "./TrelloActionButton"
 function App({lists}) {
  
   return (
@@ -9,10 +9,10 @@ function App({lists}) {
        <h2>Test</h2>
       <div style={styles.listsContainer}>
       {lists.map(list => 
-      (<TrelloList title={list.title} cards={list.cards} />
+      (<TrelloList key={list.id} title={list.title} cards={list.cards} />
       ))}
+      <TrelloActionButton list />
       </div>
-    
     </div>
   );
 }
