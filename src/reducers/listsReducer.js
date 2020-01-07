@@ -1,42 +1,42 @@
 import { CONSTANTS } from "../actions";
 let listID = 2; 
-let cardID = 4;
+let cardID = 6;
 const initialState = [
     {
       title: "Done",
-      id: 0, 
+      id: `list-${0}`, 
       cards : [
           {
-              id: 0, 
+              id: `card-${0}`, 
               text: "text test 1 ABC"
           },
           {
-              id: 1, 
+              id: `card-${1}`, 
               text: "text test 2 DEF"
-          },
-          {
-            id: 2, 
-            text: "GHI"
-          },
-          {
-            id: 3, 
-            text: "JKL"
           }
 
       ]
     },
     {
         title: "Todo",
-        id: 0, 
+        id: `list-${1}`, 
         cards : [
             {
-                id: 0, 
+                id: `card-${2}`, 
                 text: "call Alex"
             },
             {
-                id: 1, 
+                id: `card-${3}`, 
                 text: "email Alex"
-            }
+            },
+            {
+                id: `card-${4}`, 
+                text: "GHI"
+              },
+              {
+                id: `card-${5}`, 
+                text: "JKL"
+              }
   
         ]
       }   
@@ -48,7 +48,7 @@ const listsReducer = (state = initialState, action) => {
             const newList = {
                 title: action.payload,
                 cards: [],
-                id: listID
+                id: `list-${listID}`
             }
             listID += 1;
             return [...state, newList]
@@ -56,7 +56,7 @@ const listsReducer = (state = initialState, action) => {
         case CONSTANTS.ADD_CARD:
             const newCard = {
                 text: action.payload.text, 
-                id: cardID
+                id: `card-${cardID}`
             }
             cardID += 1;
             console.log("action received", action);
