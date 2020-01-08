@@ -70,7 +70,7 @@ class TrelloActionButton extends React.Component {
             <div 
             onClick={this.openForm}
             style={{
-                ...styles.openForButtonGroup,
+                ...styles.openFormButtonGroup,
                 opacity: buttonTextOpacity,
                 color: buttonTextColor,
                 backgroundColor: buttonTextBackground}}>
