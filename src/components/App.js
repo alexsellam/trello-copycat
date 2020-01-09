@@ -33,9 +33,9 @@ class App extends React.Component {
     const { lists } = this.props;
     
     return (
-      <DragDropContext onDragEnd={this.onDragEnd}>
-        <div className="App">
-         <h2>Test</h2>
+      <DragDropContext onDragEnd={this.onDragEnd}  >
+        <div className="App" >
+         <h2 style={{textAlign:"center"}}>TRELLO COPYCAT</h2>
         <Droppable droppableId="all-lists" direction="horizontal" type="list">
           {provided => (
              <ListContainer {...provided.droppableProps} ref={provided.innerRef}>
