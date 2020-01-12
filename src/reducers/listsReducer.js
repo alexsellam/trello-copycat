@@ -3,39 +3,39 @@ let listID = 2;
 let cardID = 6;
 const initialState = [
     {
-      title: "Done",
+      title: "TO DO ",
       id: `list-${0}`, 
       cards : [
           {
               id: `card-${0}`, 
-              text: "text test 1 ABC"
+              text: "feature 1"
           },
           {
               id: `card-${1}`, 
-              text: "text test 2 DEF"
+              text: "feature 2 "
           }
 
       ]
     },
     {
-        title: "Todo",
+        title: "DONE",
         id: `list-${1}`, 
         cards : [
             {
                 id: `card-${2}`, 
-                text: "call Alex"
+                text: "UX flow"
             },
             {
                 id: `card-${3}`, 
-                text: "email Alex"
+                text: "UI Mockups"
             },
             {
                 id: `card-${4}`, 
-                text: "GHI"
+                text: "Technical requirements"
               },
               {
                 id: `card-${5}`, 
-                text: "JKL"
+                text: "Boilerplate"
               }
   
         ]
