@@ -1,3 +1,5 @@
+## This project is deployed and live at https://trello-copycat.alexsellam.now.sh
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
